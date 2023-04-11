@@ -1,0 +1,27 @@
+{
+  "name": "onkyo",
+  "version": "1.0.0",
+  "description": "Onkyo Reciever Controller for Alexa",
+  "main": "onkyo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://cgopal@bitbucket.org/alexa102/onkyoalexa.git"
+  },
+  "keywords": [
+    "onkyo"
+  ],
+  "author": "Chetan Gopal",
+  "license": "ISC",
+  "homepage": "https://cgopal@bitbucket.org/alexa102/#readme",
+  "dependencies": {
+    "sshpk": "1.13.2",
+    "node-forge": "1.3.0",
+    "alexa-verifier": "^0.3.6",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "json-beautify": "^1.0.1"
+  }
+}

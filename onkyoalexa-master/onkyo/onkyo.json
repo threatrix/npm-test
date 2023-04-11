@@ -1,0 +1,65 @@
+{
+	"ssl" : {
+		"hostname" : "https://your.alexaservice.com/",
+		"port" : 443,
+		"sslPath" : "/etc/letsencrypt/live/your.alexaservice.com/",
+		"credentials" : {  
+			"key": "privkey.pem",
+			"cert": "fullchain.pem"
+		}
+	},
+	"onkyo" : {
+		"device" : "192.168.2.100",
+		"port" : 60128 ,
+		"maxVolume" : "80",
+		"intents" : {
+			"muteIntent"     : { 
+				"command" : "AMT", 
+				"off" : "00", 
+				"on" : "01"
+			},
+			
+			"powerIntent"    : { 
+				"command" : "PWR", 
+				"off" : "00", 
+				"on" : "01"
+			},
+			
+			"volumeIntent"    : { 
+				"command" : "MVL", 
+				"Up"      : "UP",
+				"Down"    : "DOWN",
+				"increase" : "UP",
+				"decrease" : "DOWN"
+			},
+	
+			"switchIntent"   : {
+				"command" : "SLI",
+				"DVR"	  : "00",
+				"Cable"   : "01",
+				"Gaming"  : "02",
+				"Aux"     : "03",
+				"PC"      : "05",
+				"DVD"     : "10",
+				"TV"      : "20",
+				"Phono"   : "22",
+				"CD"      : "23",
+				"FM"      : "24",
+				"AM"      : "25",
+				"Tuner"   : "26"
+			},
+				
+			"modeIntent"     : {
+				"command" : "LMD",
+				"Stereo"  : "00",
+				"Direct"  : "01",
+				"Surround": "02",
+				"Film"    : "03",
+				"Theater" : "04",
+				"Action"  : "05",
+				"Musical" : "06",
+				"Dolby"   : "41"
+			}
+		}
+	}
+}
