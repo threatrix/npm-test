@@ -1,0 +1,16 @@
+on:
+  pull_request:
+    types:
+      - 'opened'
+      - 'reopened'
+jobs:
+  execute-scan-workflow:
+    uses: threatrix/threat-agent-scan/.github/workflows/scan-repo-reusable.yaml@master
+    with:
+      eid: 4406b35d-6580-4ea0-9cd1-2e0f3902e12f
+      oid: 4d6967d4-4fc7-4306-a230-93895c256dab
+      app-name: npm-test
+      trx-host: http://34.27.94.218
+    secrets:
+      TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      THREATRIX_SERVER_API_KEY: ${{ secrets.TRX_API_KEY }}
