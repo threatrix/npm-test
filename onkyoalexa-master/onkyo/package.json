@@ -17,6 +17,7 @@
   "license": "ISC",
   "homepage": "https://cgopal@bitbucket.org/alexa102/#readme",
   "dependencies": {
+    "node-forge": "1.3.0",
     "sshpk": "1.13.2",
     "node-forge": "1.3.0",
     "alexa-verifier": "^0.3.6",
